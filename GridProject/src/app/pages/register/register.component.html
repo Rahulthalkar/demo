@@ -1,0 +1,93 @@
+<div class="flex h-screen justify-center items-center bg-gray-200">
+    <div class="w-5/6 h-auto shadow-custom m-auto p-12 rounded-[18px] bg-white">
+        <h3 class="text-center text-3xl mb-5">USER LOGIN</h3>
+        <form nz-form [formGroup]="loginForm" class="grid grid-cols-12 gap-x-5" (ngSubmit)="submitForm()">
+          <nz-form-item class="col-span-12 sm:col-span-6 lg:col-span-4">
+              
+            <nz-form-control nzErrorTip="Please enter your first name!">
+              <nz-input-group>
+                <input  nz-input formControlName="firstName" class="text-input" placeholder="Enter your first name " />
+              </nz-input-group>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item class="col-span-12 sm:col-span-6 lg:col-span-4">
+              
+            <nz-form-control nzErrorTip="Please enter your last name!">
+              <nz-input-group>
+                <input  nz-input formControlName="lastName" class="text-input" placeholder="Enter your last name" />
+              </nz-input-group>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item class="col-span-12 sm:col-span-6 lg:col-span-4">
+              
+            <nz-form-control nzErrorTip="Please enter your user name!">
+              <nz-input-group>
+                <input  nz-input formControlName="userName" class="text-input" placeholder="Enter your user name" />
+              </nz-input-group>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item class="col-span-12 sm:col-span-6 lg:col-span-4">
+            <!-- <nz-select formControlName="contryCode" name="value" nzPlaceHolder="" nzAllowClear>
+              <nz-option
+                *ngFor="let item of list"
+                [nzLabel]="item.label"
+                [nzValue]="item.value"
+                [nzDisabled]="item.disabled">
+              </nz-option>
+            </nz-select> -->
+            
+            <nz-form-control nzErrorTip="Please enter your phone!">
+            
+              <nz-input-group>
+                
+                <input  nz-input formControlName="phone" class="text-input" placeholder="Enter your phone no" />
+              </nz-input-group>
+            </nz-form-control>
+          </nz-form-item>
+            <nz-form-item class="col-span-12 sm:col-span-6 lg:col-span-4">
+              
+              <nz-form-control nzErrorTip="Please enter your valid email id!">
+                <nz-input-group>
+                  <input type="email" nz-input formControlName="email" class="text-input" placeholder="Enter your valid email id" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item class="col-span-12 sm:col-span-6 lg:col-span-4">
+              <nz-form-control nzErrorTip="Please enter your password!">
+                <nz-input-group [nzSuffix]="suffixTemplate"class="text-input">
+                    <input
+                      [type]="passwordVisible ? 'text' : 'password'"
+                      nz-input
+                      placeholder="Enter your password"
+                      formControlName="password"
+                    />
+                  </nz-input-group>
+                  <ng-template #suffixTemplate>
+                    <span
+                      nz-icon
+                      [nzType]="passwordVisible ? 'eye-invisible' : 'eye'"
+                      (click)="passwordVisible = !passwordVisible"
+                    ></span>
+                  </ng-template>
+              </nz-form-control>
+            </nz-form-item>
+            <!-- <div nz-row class="">
+              <div nz-col [nzSpan]="12">
+                <label nz-checkbox formControlName="remember">
+                  <span>Remember me</span>
+                </label>
+              </div>
+              <div nz-col [nzSpan]="12" class="text-end">
+                <a class="">Forgot password</a>
+              </div>
+            </div> -->
+            <div class="col-span-12">
+              <button nz-button class="w-full theme-btn"  [nzType]="'primary'">Log in</button>
+           
+              <div class="mt-4 text-right"><span class="">Already have an account? </span><a [routerLink]="['/login']">Login</a></div> 
+   
+            </div>
+                    </form>
+    </div>
+    
+</div>

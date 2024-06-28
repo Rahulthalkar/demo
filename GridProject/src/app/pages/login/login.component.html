@@ -1,0 +1,47 @@
+<div class="flex justify-center items-center bg-gray-200">
+    <div class="w-[450px] shadow-custom m-auto p-12 rounded-[18px] bg-white">
+        <h3 class="text-center text-3xl mb-5">USER LOGIN</h3>
+        <form nz-form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Please enter your valid email id!">
+                <nz-input-group>
+                  <input type="email" nz-input formControlName="email" class="text-input" placeholder="Enter your valid email id" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Please enter your password!">
+                <nz-input-group [nzSuffix]="suffixTemplate"class="text-input mt-2">
+                    <input
+                      [type]="passwordVisible ? 'text' : 'password'"
+                      nz-input
+                      placeholder="Enter your password"
+                      formControlName="password"
+                    />
+                  </nz-input-group>
+                  <ng-template #suffixTemplate>
+                    <span
+                      nz-icon
+                      [nzType]="passwordVisible ? 'eye-invisible' : 'eye'"
+                      (click)="passwordVisible = !passwordVisible"
+                    ></span>
+                  </ng-template>
+              </nz-form-control>
+            </nz-form-item>
+            <div nz-row class="login-form-margin">
+              <div nz-col [nzSpan]="12">
+                <label nz-checkbox formControlName="remember">
+                  <span>Remember me</span>
+                </label>
+              </div>
+              <div nz-col [nzSpan]="12" class="text-end">
+                <a class="">Forgot password</a>
+              </div>
+            </div>
+            <button nz-button class="w-full theme-btn"  [nzType]="'primary'">Log in</button>
+           
+           <div class="mt-4 text-right"><span class="">Don't have an account? </span><a [routerLink]="['/register']">register now!</a></div> 
+        </form>
+    </div>
+    
+</div>

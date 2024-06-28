@@ -1,0 +1,313 @@
+<div class="overflow-hidden border rounded-md border-light-Stroke">
+    <!-- Table Header -->
+    <ng-template #TableHead>
+      <div class="flex items-center justify-between">
+        <h4 class="font-bold text-xl">{{ gridName }}</h4>
+        <div class="flex items-center gap-3">
+          <!-- Filter Button -->
+          @if (isFilter){
+          <button
+            class="flex items-center gap-4 rounded-md"
+            nz-button
+            nzType="default"
+            nzSize="large"
+            (click)="handleFilterOpen()"
+          >
+            <img class="cursor-pointer" src="../../../assets/Img/Filter.svg" alt="filter" />
+          </button>
+          }
+          <!-- Edit Columns Button -->
+          @if (isEditCols){
+          <button
+            (click)="onHandleEditColumns()"
+            class="flex items-center gap-4 rounded-md"
+            nz-button
+            nzType="default"
+            nzSize="large"
+          >
+            <img src="../../../assets/Img/settings.svg" alt="settings" />
+          </button>
+          }
+        </div>
+      </div>
+    </ng-template>
+  
+  
+    <!-- Filter Modal -->
+    <nz-modal
+      [(nzVisible)]="isFilterVisible"
+      [nzCloseIcon]="ModalCloseIconbtn"
+      [nzTitle]="customFilterTitleTemplate"
+      (nzOnCancel)="handleFilterCancel()"
+      class="filter-modal"
+      [nzWidth]="'60vw'"
+    >
+      <ng-template #ModalCloseIconbtn>
+        <img class="mt-4" src="../../../assets/Img/close.svg" alt="close" />
+      </ng-template>
+      <ng-template #customFilterTitleTemplate>
+        <div class="flex pl-2">
+          <img src="../../../assets/Img/capsule.svg" alt="filter" />
+          <span class="pl-2">{{ 'FilterTitle' | translate }}</span>
+        </div>
+      </ng-template>
+      <ng-container *nzModalContent>
+        @for( filter of filters; track filter ; let i = $index){
+        <div class="justify-between flex gap-6 py-3 mx-4">
+          <nz-select
+            [nzAllowClear]="true"
+            [nzShowSearch]="true"
+            [nzShowArrow]="true"
+            class="w-[300px]"
+            openZorroWrapper
+            nzPlaceHolder="{{ 'SelectaColumn' | translate }}"
+            [(ngModel)]="filters[i].columnId"
+            (ngModelChange)="onColumnChange(filters[i].columnId, i)"
+          >
+            <nz-option
+              *ngFor="let option of listOfHeaderColumns"
+              [nzLabel]="option.columnName"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+          <nz-select
+            [nzAllowClear]="true"
+            [nzShowSearch]="true"
+            [nzShowArrow]="true"
+            class="w-[240px]"
+            openZorroWrapper
+            nzPlaceHolder="{{ 'selectaOption' | translate }}"
+            [(ngModel)]="filters[i].selectedValue"
+          >
+            <nz-option
+              *ngFor="let option of filters[i].listOfFilterOperator"
+              [nzLabel]="option.operatorInWords"
+              [nzValue]="option.operatorInWords"
+            ></nz-option>
+          </nz-select>
+          <input
+            [type]="filters[i].columnDataType == 'int' ? 'number' : 'text'"
+            nz-input
+            class="w-[300px] text-input"
+            nz-input
+            [(ngModel)]="filters[i].inputValue"
+          />
+          <!-- Remove Filter Button -->
+          <img src="../../../assets/Img/clear.svg" (click)="removeFilter(i)" alt="clear" class="cursor-pointer" />
+        </div>
+        }
+      </ng-container>
+      <div *nzModalFooter>
+        <div class="flex justify-between items-center mx-6 mb-6 rounded-md">
+          <div class="inline-flex">
+            <!-- Add Filter Button -->
+            <button
+              class="items-center w-44 rounded-md text-secondary-color"
+              nz-button
+              nzType="default"
+              nzSize="large"
+              (click)="addFilter()"
+            >
+              <span class="">{{ 'FilterAddBtn' | translate }} </span>
+            </button>
+          </div>
+          <div class="flex justify-end gap-3">
+            <button (click)="handleFilterOk()" nz-button nzType="primary" class="theme-btn rounded">
+              {{ 'FilterSearchBtn' | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </nz-modal>
+  </div>
+  
+  
+  <!-- Data Table -->
+  <nz-table
+    #TableData
+    [nzData]="td"
+    [nzScroll]="{ x: scroll }"
+    [nzTitle]="TableHead"
+    [nzPageSize]="pageSize"
+    [nzShowPagination]="isPaginations"
+    [nzLoading]="isLoading"
+    [class]="isFilter || isEditCol || gridName ? '' : 'NoGridHeader'"
+  >
+    <!-- Table Header -->
+    <thead>
+      <tr>
+        <!-- Checkbox Column -->
+        @if(isCheckBox){
+        <th
+          [nzLeft]="!isSmallScreen ? true : false"
+          [nzChecked]="allChecked"
+          (nzCheckedChange)="onAllChecked($event)"
+          [nzWidth]="'50px'"
+        ></th>
+        } @if(isCheckBox && isViewable && isExpand){
+        <th [nzLeft]="!isSmallScreen ? true : false" [nzWidth]="'90px'"></th>
+        } @if(isCheckBox && isExpand && !isViewable){
+        <th [nzLeft]="!isSmallScreen ? true : false" [nzWidth]="'70px'"></th>
+        } @if(isCheckBox && !isExpand && isViewable){
+        <th [nzLeft]="!isSmallScreen ? true : false" [nzWidth]="'80px'"></th>
+        } @if(!isCheckBox && isExpand && isViewable){
+        <th [nzLeft]="!isSmallScreen ? true : false" [nzWidth]="'90px'"></th>
+        } @if(!isCheckBox && isExpand && !isViewable){
+        <th [nzLeft]="!isSmallScreen ? true : false" [nzWidth]="'70px'"></th>
+        } @if(!isCheckBox && !isExpand && isViewable){
+        <th [nzLeft]="!isSmallScreen ? true : false" [nzWidth]="'70px'"></th>
+        } @for( column of customColumns; track column ;){
+        <ng-container>
+          <!-- Compare Function for Columns-->
+          @if(column.isVisible){
+          <th [nzLeft]="!isSmallScreen ? column.isFix : false" [nzSortFn]="column.compare">
+            {{ column.columnName |  translate }}
+          </th>
+          }
+        </ng-container>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table Body -->
+      <ng-template ngFor let-data [ngForOf]="TableData.data">
+        <tr>
+          <!-- Checkbox Cell -->
+          @if(isCheckBox){
+          <td
+            [nzChecked]="setOfCheckedId.has(data.id)"
+            (nzCheckedChange)="onRowChecked(data.id, $event)"
+            [nzLeft]="!isSmallScreen ? true : false"
+            nzWidth="50px"
+          ></td>
+          }
+          <!-- Expand Cell -->
+          @if(isExpand){
+          <td
+            [nzLeft]="!isSmallScreen ? true : false"
+            [nzExpand]="isRowExpanded(data.id)"
+            (nzExpandChange)="toggleExpand(data.id)"
+          >
+            @if(isViewable){
+            <span
+              nz-icon
+              nzType="edit"
+              class="pl-4 cursor-pointer"
+              (click)="openModalDetails(data.id)"
+              nzTheme="outline"
+            ></span>
+            }
+          </td>
+          } @if(!isExpand && isViewable){
+          <td [nzLeft]="!isSmallScreen ? true : false">
+            <span
+              nz-icon
+              nzType="edit"
+              class="pl-4 cursor-pointer"
+              (click)="openModalDetails(data.id)"
+              nzTheme="outline"
+            ></span>
+          </td>
+          } @for( column of customColumns; track column ;){
+          <ng-container>
+            @if(column.isVisible){
+            <td [nzLeft]="!isSmallScreen ? column.isFix : false" (click)="onClickRow(data.id)">
+              <!-- Check if data is an array -->
+              @if(isArray(data[column.columnName])){
+              <ng-container>
+                <!-- If it's an array, render each item as a tag -->
+                <nz-tag
+                  class="text-primary-color border-primary-light-color px-1 my-1"
+                  *ngFor="let item of data[column.columnName]"
+                >
+                  <ng-container *ngTemplateOutlet="tooltipTemplate; context: { item: item }"> </ng-container>
+                </nz-tag>
+                <!--Tooltip-->
+                <ng-template #tooltipTemplate let-item="item">
+                  <span nz-tooltip [nzTooltipTitle]="item">
+                    {{ truncateItem(item, 25) }}
+                  </span>
+                </ng-template>
+              </ng-container>
+              }
+              <!-- If not an array, display data as usual -->
+              @if(!isArray(data[column.columnName])){
+              <ng-container>
+                {{ data[column.columnName] | translate }}
+              </ng-container>
+              }
+            </td>
+            }
+          </ng-container>
+          }
+        </tr>
+        <!-- Child Table -->
+        @if(isExpand){
+        <tr [nzExpand]="isRowExpanded(data.id)">
+          <app-common-grid [td]="childTd" [th]="childTh" [isPaginations]="true" class="child-table"></app-common-grid>
+        </tr>
+        }
+      </ng-template>
+    </tbody>
+  </nz-table>
+  <!-- Edit Columns Modal -->
+  <nz-modal [(nzVisible)]="isEditCol" (nzOnCancel)="handleEditCancel()" nzTitle="{{ 'Editarcolumnas' | translate }}">
+    <ng-container *nzModalContent>
+      <div nz-row [nzGutter]="24">
+        <!-- Displayed Columns -->
+        <div nz-col class="gutter-row" [nzSpan]="12">
+          <div class="custom-column-container">
+            <p>{{ 'ShowDragNDropTitle' | translate }}</p>
+            @for( column of fixedColumns; track column ;){
+            <div class="custom-column-box">
+              {{ column.columnName | translate }}
+            </div>
+            }
+            <div
+              cdkDropList
+              #todoList="cdkDropList"
+              [cdkDropListData]="visibleColumns"
+              [cdkDropListConnectedTo]="[doneList]"
+              class="custom-column-list"
+              (cdkDropListDropped)="drop($event)"
+            >
+              <div class="custom-column-box" *ngFor="let column of visibleColumns; let i = index" cdkDrag>
+                {{ column.columnName | translate }}
+                <span nz-icon nzType="minus-circle" nzTheme="outline" (click)="deleteCustom(column, i)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Not Shown Columns -->
+        <div nz-col class="gutter-row" [nzSpan]="12">
+          <div class="custom-column-container">
+            <p>{{ 'Nomostrada' | translate }}</p>
+            <div
+              cdkDropList
+              #doneList="cdkDropList"
+              [cdkDropListData]="hiddenColumns"
+              [cdkDropListConnectedTo]="[todoList]"
+              class="custom-column-list"
+              (cdkDropListDropped)="drop($event)"
+            >
+              <div class="custom-column-box" *ngFor="let column of hiddenColumns; let i = index" cdkDrag>
+                {{ column.columnName | translate }}
+                <span nz-icon nzType="plus-circle" nzTheme="outline" (click)="addCustom(column, i)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <ng-container *nzModalFooter>
+      <div class="flex justify-end gap-3">
+        <button class="hover:bg-light-Stroke theme-btn" (click)="handleEditCancel()" nz-button nzType="text">
+          {{ 'Cancelar' | translate }}
+        </button>
+        <button class="theme-btn" (click)="handleEditOk()" nz-button nzType="primary">
+          {{ 'Ahorrar' | translate }}
+        </button>
+      </div>
+    </ng-container>
+  </nz-modal>
+  

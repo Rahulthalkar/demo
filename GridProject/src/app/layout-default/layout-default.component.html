@@ -1,0 +1,185 @@
+<div class="fixed flex">
+    <nz-sider class="z-[99999] h-screen sidebar" nzWidth="250px" [nzCollapsedWidth]="isSmallScreen ? 0 : 80"
+        nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+        <div class="h-12 m-4">
+          <!-- <img class="w-[102px]" src="../../../assets/Img/AKKON LOGO FINAL PNG 1.svg" alt="" /> -->
+          <img class="w-[30px]" src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+        </div>
+        <ul class="mt-[50px] space-y-4 text-base font-medium text-secondary-color" nz-menu nzTheme="light"
+          nzMode="inline">
+          <li routerLink="/employee" class="group" nz-menu-item (click)="collapseSidebar()">
+            <span nz-icon>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path class="group-active:stroke-white group-hover:stroke-primary-color"
+                  d="M9.16663 3.66675H3.66663V9.16675H9.16663V3.66675Z" stroke="#67768C" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path class="group-active:stroke-white group-hover:stroke-primary-color"
+                  d="M18.3334 3.66675H12.8334V9.16675H18.3334V3.66675Z" stroke="#67768C" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path class="group-active:stroke-white group-hover:stroke-primary-color"
+                  d="M18.3334 12.8333H12.8334V18.3333H18.3334V12.8333Z" stroke="#67768C" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path class="group-active:stroke-white group-hover:stroke-primary-color"
+                  d="M9.16663 12.8333H3.66663V18.3333H9.16663V12.8333Z" stroke="#67768C" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            
+            <span>{{ 'employees' | translate }}</span>
+          </li>
+          <li routerLink="/login" nz-menu-item (click)="collapseSidebar()" routerLinkActive="active">
+            <span nz-icon >
+              <ng-icon class="flex items-center h-full text-[10px]" name="matCircleOutline"></ng-icon>
+            </span>
+            <span>Login</span>
+          </li>
+          <li nz-submenu nzTitle="employees" nzIcon="file-text">
+            <ul class="text-base font-medium text-secondary-color">
+              <li routerLink="/welcome" nz-menu-item (click)="collapseSidebar()" routerLinkActive="active">
+                <span nz-icon >
+                <span nz-icon nzType="up-circle" nzTheme="outline" class="bg-black"></span>
+                  <!-- <ng-icon class="flex items-center h-full text-[10px]" name="matCircleOutline"></ng-icon> -->
+                </span>
+                <span>{{ 'view' | translate }}</span>
+              </li>
+              <li nz-menu-item  routerLink="/update-password" (click)="collapseSidebar()">
+                <span nz-icon>
+                  <ng-icon class="flex items-center h-full text-[10px]" name="matCircleOutline"></ng-icon>
+                </span>
+                <span>update-password</span>
+              </li>
+            </ul>
+          </li>
+         
+          <li nz-submenu nzTitle="Configuracion" nzIcon="setting">
+            <ul class="text-base font-medium text-secondary-color"></ul>
+          </li>
+        </ul>
+    </nz-sider>
+    <div *ngIf="!isCollapsed && isSmallScreen" class="overlay" (click)="collapseSidebar()"></div>
+  
+    <nz-layout>
+      <header [class]="isCollapsed ? 'lg:pl-[80px]' : 'lg:pl-[250px]'"
+      class="bg-white flex justify-between fixed right-0 z-[1000] left-0 transition-none">
+      <span class="text-lg cursor-pointer leading-[64px] px-6" nz-icon
+        [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'" (click)="toggleChange()"></span>
+      <div class="flex items-center gap-5 sm:mr-6">
+        <div class="flex items-center gap-3">
+          
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="29" height="29" rx="2.5" fill="white" stroke="#E2E8F0" />
+            <g clip-path="url(#clip0_351_505)">
+              <path
+                d="M11.3334 11.3333C11.3334 10.6039 11.6714 9.90443 12.2731 9.38871C12.8748 8.87298 13.6908 8.58325 14.5417 8.58325H15.4584C16.3093 8.58325 17.1253 8.87298 17.727 9.38871C18.3287 9.90443 18.6667 10.6039 18.6667 11.3333C18.7005 11.9284 18.5399 12.5184 18.2093 13.0144C17.8786 13.5104 17.3957 13.8855 16.8334 14.0833C16.271 14.3469 15.7882 14.8471 15.4575 15.5084C15.1268 16.1697 14.9663 16.9564 15 17.7499"
+                stroke="#343941" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15 21.4167V21.4267" stroke="#343941" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_351_505">
+                <rect width="22" height="22" fill="white" transform="translate(4 4)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+  
+        <div class="flex items-center">
+          <a nz-dropdown nzTrigger="hover" [nzDropdownMenu]="menu"
+            class="items-center font-medium uppercase lg:flex text-forground-black text-input">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_351_490)">
+                <rect x="3" y="3" width="30" height="30" rx="3" fill="#277D39" />
+                <rect x="3.75" y="3.75" width="28.5" height="28.5" rx="2.25" stroke="white" stroke-width="1.5" />
+              </g>
+              <path
+                d="M24.6667 25.5V23.8333C24.6667 22.9493 24.3155 22.1014 23.6904 21.4763C23.0653 20.8512 22.2174 20.5 21.3334 20.5H14.6667C13.7827 20.5 12.9348 20.8512 12.3097 21.4763C11.6846 22.1014 11.3334 22.9493 11.3334 23.8333V25.5"
+                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M18 17.1667C19.8409 17.1667 21.3333 15.6743 21.3333 13.8333C21.3333 11.9924 19.8409 10.5 18 10.5C16.159 10.5 14.6666 11.9924 14.6666 13.8333C14.6666 15.6743 16.159 17.1667 18 17.1667Z"
+                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <defs>
+                <filter id="filter0_d_351_490" x="0" y="0" width="36" height="36" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset />
+                  <feGaussianBlur stdDeviation="1.5" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_351_490" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_351_490" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+  
+            <span class="pl-2 hidden lg:block"></span>
+            <span nz-icon nzType="down" class="pl-2 hidden lg:block"></span>
+          </a>
+          <nz-dropdown-menu #menu="nzDropdownMenu" class="text-primary">
+            <ul nz-menu>
+              <li nz-menu-item (click)="collapseSidebar()" class="border-b pointer-events-none">
+                <div>
+                  <p class="text-secondary-color">
+                    {{ 'Signedinaslabel' | translate }}
+                  </p>
+                  <p class="text-forground-black text-primary">
+                    
+                  </p>
+                </div>
+              </li>
+              <li nz-menu-item (click)="collapseSidebar()" class="h-10" routerLink="my-profile">
+                <span nz-icon>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 15.75V14.25C15 13.4544 14.6839 12.6913 14.1213 12.1287C13.5587 11.5661 12.7956 11.25 12 11.25H6C5.20435 11.25 4.44129 11.5661 3.87868 12.1287C3.31607 12.6913 3 13.4544 3 14.25V15.75"
+                      stroke="#343941" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M9 8.25C10.6569 8.25 12 6.90685 12 5.25C12 3.59315 10.6569 2.25 9 2.25C7.34315 2.25 6 3.59315 6 5.25C6 6.90685 7.34315 8.25 9 8.25Z"
+                      stroke="#343941" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="ml-3 text-primary">{{ 'MyprofileLabel' | translate }}</span>
+              </li>
+              <li nz-menu-item (click)="collapseSidebar()" class="h-12 lg:h-10 flex text-primary"
+                routerLink="user-list">
+                <img src="../assets/images/right.svg" alt="" /><span class="ml-3">{{
+                  'Userslabel' | translate
+                  }}</span>
+              </li>
+              <li nz-menu-item (click)="collapseSidebar()" class="h-12 lg:h-10">
+                <a href="#" routerLink="notification" class="flex text-primary"><img
+                    src="../assets/images/right.svg" alt="" /><span class="ml-3">{{
+                    'NotificationLabel' | translate
+                    }}</span>
+                </a>
+              </li>
+              <li nz-menu-item (click)="collapseSidebar()" class="flex h-12 lg:h-10 text-primary">
+                <img src="" alt="" /><span class="ml-3">{{
+                  'SatSyncLabel' | translate
+                  }}</span>
+              </li>
+              <li nz-menu-item (click)="Logout()" class="h-12 lg:h-10 text-primary">
+                <img src="../../../assets/Img/Signout.svg" alt="" /><span class="ml-3">{{
+                  'SignOut' | translate
+                  }}</span>
+              </li>
+            </ul>
+          </nz-dropdown-menu>
+        </div>
+      </div>
+      </header>   
+      <nz-content>
+        <nz-breadcrumb [class]="!isCollapsed && isSmallScreen ? 'text-[0px]' : 'text-secondary'"
+          class="fixed z-[9999] flex w-full px-6 py-2 mx-0 mt-16 bg-white border-t" [nzSeparator]="iconTemplate"
+          [nzAutoGenerate]="true" [nzRouteLabel]="'breadcrumb'">
+        </nz-breadcrumb>
+        <ng-template #iconTemplate><img src="../assets/images/right.svg" /></ng-template>
+        <div  [class]="isCollapsed ? 'lg:pl-[80px]' : 'lg:pl-[250px]'"
+          class="fixed left-0 right-0 h-screen overflow-hidden overflow-y-auto transition-none inside-component pb-28 mt-[6.4rem] mx-6">
+          <router-outlet></router-outlet>
+          <nz-footer class="text-center"> ©2024 Implement By Angular</nz-footer>
+        </div>
+      </nz-content>    
+    </nz-layout>
+  </div>

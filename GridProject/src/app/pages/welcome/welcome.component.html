@@ -1,0 +1,50 @@
+<p>welcome</p>
+<div class="grid grid-cols-4 my-3">
+    <nz-input-group class="w-56 text-input" [nzSuffix]="suffixIconSearch">
+        <input type="text" nz-input placeholder="" [(ngModel)]="searchCriteria"
+          (input)="searchEmployee()" />
+      </nz-input-group>
+      <ng-template #suffixIconSearch>
+        <img src="../../../assets/Img/search.svg" alt="" />
+      </ng-template>
+</div>
+  
+<div class="rounded-lg border">
+    <nz-table #sortTable [nzData]="employeeList" nzTableLayout="fixed">
+        <thead>
+            <tr> @for (column of listOfColumn; track $index) {
+          
+                <th  [nzSortFn]="column.compare" [nzSortPriority]="column.priority">
+                {{ column.title }}
+                </th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+         @for (data of sortTable.data; track $index) {
+            <tr>
+            <td>{{ data.firstName }}</td>
+            <td>{{ data.lastName }}</td>
+            <td>{{ data.userName}}</td>
+            <td>{{ data.phone}}</td>
+            </tr>
+        } 
+        </tbody>
+    </nz-table>
+    
+</div>
+
+<!-- <div style="background-image: url('../../../assets/images/bg.jpg');">
+    <nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate" class="rounded-md">
+
+        <nz-card-meta nzTitle="Europe Street beat" nzDescription="www.instagram.com"></nz-card-meta>
+        <div class="grid grid-cols-12-12">
+            <label for="">First Name</label> {{userProfile.firstName}}
+        </div>
+    
+    </nz-card>      
+      <ng-template #coverTemplate>
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" class="rounded-xl" />
+      </ng-template>  
+</div>
+       -->
