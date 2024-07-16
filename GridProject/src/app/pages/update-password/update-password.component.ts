@@ -35,7 +35,7 @@ export class UpdatePasswordComponent {
     this.updateForm= this.fb.group({
      
       currentpassword: ['', [Validators.required]],
-      newpassword: ['', [Validators.required],],
+      newpassword: ['', [Validators.required,this.newValidator]],
       confirmpassword: ['',[Validators.required, this.confirmValidator]],
     
     });
@@ -83,7 +83,21 @@ export class UpdatePasswordComponent {
       }
     }
     
-    
+         // Validator function to check if old password and new password are the not same
+  newValidator: ValidatorFn = (control: AbstractControl): { [s: string]: boolean } => {
+    const newPassword = control.value;
+    const oldPasswordControl = control.parent?.get('currentpassword');
+
+    if (!newPassword) {
+      return { required: true };
+    } else if (oldPasswordControl && newPassword === oldPasswordControl.value) {
+      return {
+        newpasswordSameAsOld: true, error: true
+      };
+    }
+    return {};
+  };
+
   validUserPassword(){
     const password=this.updateForm.get('currentpassword')?.value || '';
       this.userService.ValidateUser(this.emailId,password,).subscribe({

@@ -1,0 +1,28 @@
+<div class="ekam-container">
+    <div class=" flex justify-center items-center h-screen">
+        <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+            <label for="userName" class="p-2">User name</label>
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Please input your username!">
+                <nz-input-group nzPrefixIcon="user">
+                  <input type="text" nz-input formControlName="userName" id="userName" class="text-input" placeholder="Username" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <label for="password" class="p-2">Pasword</label>
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Please input your Password!">
+                <nz-input-group nzPrefixIcon="lock">
+                  <input type="password" nz-input formControlName="password" id="password" class="text-input" placeholder="Password" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <div class="flex justify-around">
+                <button nz-button class="bg-primary-theme-color border-0" [nzType]="'primary'">Log in</button>
+                <button nz-button class="bg-primary-theme-color border-0" [nzType]="'primary'">Log in</button>
+            </div>
+           
+          </form>
+    </div>
+   
+</div>

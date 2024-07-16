@@ -1,0 +1,122 @@
+<div class="container">
+
+    <table class="table table-responsive mt-4">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Is Active</th>
+                <th>Totals marks</th>
+            </tr>
+        </thead>
+        <tbody>
+             @for (item of listofStudents; track $index) {<tr>
+                <td>{{item.id}}</td>
+                <td>{{item.firstname}}</td>
+                <td>{{item.lastname}}</td>
+                <td>@if(item.Active==true){
+                    <span class="btn btn-success w-50 f-2">Acitve</span>
+                    }@else{
+                        <span class="btn btn-info w-50">De-Acitve</span>
+                    }
+                </td>
+                <td><div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" [ngStyle]="{'width':item.totalMarks +'%'}">{{item.totalMarks}}</div>
+                  </div></td>
+
+             </tr>
+                
+            }
+            
+        </tbody>
+    
+    </table>
+<button (click)="istoggle()" class="btn">click</button>
+   <div class="container p-5 bg-light rounded">
+    <div class="row">
+        <div class="col-4" [ngClass]="isAcitve ? 'bg-success':'bg-info' ">hello</div>
+          <div class="col-4">DOM</div>
+          <div class="col-4" [ngClass]="isstyleClasses">FY</div>
+      </div>
+   </div>
+</div>
+<div [ngStyle]="isstyleClasses">FY</div>
+<div>
+    <select name="" id="">
+        @for (item of listofStudents; track $index) {
+            <option [value]="item.id" >{{item.firstname}}</option>
+        }
+    </select>
+</div>
+<div class="container p-5">
+<input type="text" [(ngModel)]="isnumberActive">
+<label for="">Today is: </label>
+@switch (isnumberActive) {
+    @case ('1') {
+        <span>Monday</span>
+    }
+    @case ('2') {
+        <span>Tuesday</span>
+    }
+    @case ('3') {
+        <span>Wednesday</span>
+    }
+    @case ('4') {
+        <span>Thursday</span>
+    }
+    @case ('5') {
+        <span>Friday</span>
+    }
+    @case ('6') {
+        <span>Saturday</span>
+    }
+    @case ('7') {
+        <span>Sunday</span>
+    }
+    @default {
+        <span>Wrong entry</span>
+    }
+}
+</div>
+<div class="bg-light container p-5 text-center">
+<h1>Pipe</h1>
+</div>
+<div class="row m-0">
+    <div class="col">
+        without pipes {{fistname}}
+        with pipe {{fistname | uppercase}}
+    </div>
+    <div class="col">
+        without pipes {{fistname}}
+        with pipe {{fistname | lowercase}}
+    </div>
+    <div class="col">
+        without pipes {{titleview}}
+        with pipe {{titleview | titlecase}}
+    </div>
+</div>
+<div class="row m-0">
+    <div class="col">
+        without pipes {{currentDate}}
+        with pipe {{currentDate | date}}
+    </div>
+    <div class="col">
+        withoit pipes {{currentDate |date:'dd-MMM-yy'}}
+        <br>
+        with pipe {{currentDate | date:'dd-MM-yyyy'}}
+    </div>
+    <div class="col">
+         Date :{{currecntTime |async|date:'hh-mm-ss' }}
+         <br>
+        with pipe data :{{currecntTime | async}}
+    </div>
+</div>
+<div class="row m-0">
+    <div class="col">
+        without pipes {{student}}
+        <br>
+        with json pipe {{student | json}}
+    </div>
+    
+</div>

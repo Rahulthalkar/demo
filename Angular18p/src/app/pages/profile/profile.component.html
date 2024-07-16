@@ -1,0 +1,56 @@
+<div class="container mt-4">
+    <h2 class="text-center mb-3">Templete form binding</h2>
+<form class="row g-4 needs-validation" [formGroup]="studentForms" novalidate>
+    <div class="col-md-3">
+        <input type="text" class="form-control" formControlName="firstname" placeholder="Enter firstname" required minlength="3">
+        <div class="text-danger">
+            @if (studentForms.controls['firstname'].touched &&
+             studentForms.controls['firstname'].errors?.['required']) {
+                <span>This field is required</span>
+             }@else if (studentForms.controls['firstname'].touched &&
+             studentForms.controls['firstname'].errors?.['minlength']) {
+                <span>at least 3 charactor required</span>
+             }
+        </div> 
+    </div>
+    <div class="col-md-3">
+        <input type="text" class="form-control" formControlName="lastname" placeholder="Enter lastname" required minlength="3">
+        <div class="text-danger">
+            @if (studentForms.controls['lastname'].touched &&
+             studentForms.controls['lastname'].errors?.['required']) {
+                <span>This field is required</span>
+             }@else if (studentForms.controls['lastname'].touched &&
+             studentForms.controls['lastname'].errors?.['minlength']) {
+                <span>at least 3 charactor required</span>
+             }
+        </div> 
+    </div>
+    <div class="col-md-3">
+        <input type="text" class="form-control" formControlName="username" placeholder="Enter username" required minlength="3">
+        <div class="text-danger">
+            @if (studentForms.controls['username'].touched &&
+             studentForms.controls['username'].errors?.['required']) {
+                <span>This field is required</span>
+             }@else if (studentForms.controls['username'].touched &&
+             studentForms.controls['username'].errors?.['minlength']) {
+                <span>at least 3 charactor required</span>
+             }
+        </div> 
+    </div>
+    <div class="col-md-3">
+        <input type="text" class="form-control" formControlName="phone" placeholder="Enter your phone number" required minlength="3">
+        <div class="text-danger">
+            @if (studentForms.controls['phone'].touched &&
+             studentForms.controls['phone'].errors?.['required']) {
+                <span>This field is required</span>
+             }@else if (studentForms.controls['phone'].touched &&
+             studentForms.controls['phone'].errors?.['minlength']) {
+                <span>at least 3 charactor required</span>
+             }
+        </div> 
+    </div>
+    <div class="col-12 mt-5">
+      <button class="btn btn-primary" type="submit" [disabled]="studentForms.invalid"  (click)="submitform()">Submit form</button>
+    </div>
+</form>
+</div>
