@@ -5,7 +5,7 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzIconModule, NzIconService } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { UserService } from '../../service/userData.service';
 import { HttpErrorResponse } from '@angular/common/http';
 @Component({
@@ -27,7 +27,8 @@ export class UpdatePasswordComponent {
   isUserId:string;
   emailId:string;
   constructor(private fb: NonNullableFormBuilder,
-    private userService:UserService
+    private userService:UserService,
+    private router:Router
   ) {
     this.isUserId = (sessionStorage.getItem('userId') || '');
     this.emailId =sessionStorage.getItem('userEmail')|| '';
@@ -64,6 +65,7 @@ export class UpdatePasswordComponent {
           next:(response:any)=>{
             if (response.isSuccess) {
               this.userService.ShowNotification('success', '','PasswordIsUpdatedSuccessfully');
+              this.router.navigate(['/login'])
             } else {
               if (response.errorMessageKey == 'UnableToUpdatePassword') {
                 this.userService.ShowNotification('error', '','UnableToUpdatePassword');
