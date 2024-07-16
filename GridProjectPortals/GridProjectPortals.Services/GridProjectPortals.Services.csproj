@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.16" />
+    <PackageReference Include="MailKit" Version="4.5.0" />
+    <PackageReference Include="MimeKit" Version="4.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GridProjectPortals.BLL\GridProjectPortals.BLL.csproj" />
+  </ItemGroup>
+
+</Project>
