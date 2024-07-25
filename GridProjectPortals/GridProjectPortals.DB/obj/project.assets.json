@@ -4586,11 +4586,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.csproj",
+      "projectUniqueName": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.csproj",
       "projectName": "GridProjectPortals.DB",
-      "projectPath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.csproj",
+      "projectPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.csproj",
       "packagesPath": "C:\\Users\\ER\\.nuget\\packages\\",
-      "outputPath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.DB\\obj\\",
+      "outputPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4607,8 +4607,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj": {
-              "projectPath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj"
+            "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj": {
+              "projectPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj"
             }
           }
         }

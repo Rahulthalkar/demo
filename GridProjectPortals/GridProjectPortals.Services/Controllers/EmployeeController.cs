@@ -25,16 +25,21 @@ namespace GridProjectPortals.Services.Controllers
         {
             log.Info($"{nameof(CreateUser)} method called with userdata: {addEmployeesModel}");
             APIResult<string> response = new APIResult<string>();
+            if (ModelState.IsValid)
+            {
+                if (addEmployeesModel != null)
+                {
+                    response = _employeeService.CreateUser(addEmployeesModel);
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            return BadRequest(response);
 
-            if (addEmployeesModel != null)
-            {
-                response = _employeeService.CreateUser(addEmployeesModel);
-                return Ok(response);
-            }
-            else
-            {
-                return BadRequest();
-            }
+           
         }
         [HttpPost]
         [Route("Login")]

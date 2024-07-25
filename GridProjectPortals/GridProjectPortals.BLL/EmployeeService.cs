@@ -46,6 +46,7 @@ namespace GridProjectPortals.BLL
                         addUserModel.Password = null;
                     }*/
                     var result = _employeeRepository.CreateEmployee(addEmployeesModel);
+
                     if (result.IsSuccess)
                     {
                         apiResult.IsSuccess = true;
@@ -250,6 +251,101 @@ namespace GridProjectPortals.BLL
             APIResult<string> response = new APIResult<string>();
             response = _employeeRepository.ValidateUser(email, password);
             return response;
+        }
+
+        public APIResult<string> Comments(CommentsrRequestModel commentsrRequestModel)
+        {
+            APIResult<string> response = new APIResult<string>();
+            try
+            {
+                var empdata = _employeeRepository.Comments(commentsrRequestModel);
+                if (empdata != null)
+                {
+                    response.IsSuccess = true;
+                    response.Value = "success comment";
+                }
+                else
+                {
+                    response.IsSuccess = false;
+                    response.Value = "failed to comment";
+                }
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessageKey = "ConnectionFailed";
+                response.ExceptionInfo = JsonConvert.SerializeObject(ex);
+                return response;
+            }
+
+        }
+
+        public APIResult<string> ReplayComments(ReplayCommentsrRequestModel replayCommentsrRequest)
+        {
+            APIResult<string> response = new APIResult<string>();
+            try
+            {
+                var empdata = _employeeRepository.ReplayComments(replayCommentsrRequest);
+                if (empdata != null)
+                {
+                    response.IsSuccess = true;
+                    response.Value = "success comment";
+                }
+                else
+                {
+                    response.IsSuccess = false;
+                    response.Value = "failed to comment";
+                }
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessageKey = "ConnectionFailed";
+                response.ExceptionInfo = JsonConvert.SerializeObject(ex);
+                return response;
+            }
+
+        }
+
+        public APIResult<List<CommentsrResponseModel>> GetCommentById(int id)
+        {
+            APIResult<List<CommentsrResponseModel>> result=new APIResult<List<CommentsrResponseModel>>();
+            try
+            {
+                var dataResult = _employeeRepository.GetCommentsByUserId(id);
+                result.IsSuccess = true;
+                result.Value = dataResult;
+                return result;
+            }catch(Exception ex)
+            {
+                result.IsSuccess = false;
+                result.ErrorMessageKey = "ConnectionFailed";
+                result.ExceptionInfo= JsonConvert.SerializeObject(ex);
+                return result;
+            }
+
+        }
+        public APIResult<List<CommentsrResponseModel>> GetCommentByCommentId(int id,int commentId)
+        {
+            APIResult<List<CommentsrResponseModel>> result=new APIResult<List<CommentsrResponseModel>>();
+            try
+            {
+                var dataResult = _employeeRepository.GetCommentByCommentId(id,commentId);
+                result.IsSuccess = true;
+                result.Value = dataResult;
+                return result;
+            }catch(Exception ex)
+            {
+                result.IsSuccess = false;
+                result.ErrorMessageKey = "ConnectionFailed";
+                result.ExceptionInfo= JsonConvert.SerializeObject(ex);
+                return result;
+            }
+
         }
     }
 }

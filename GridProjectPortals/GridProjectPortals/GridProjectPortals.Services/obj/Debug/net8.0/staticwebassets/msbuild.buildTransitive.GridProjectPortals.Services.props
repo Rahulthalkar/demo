@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GridProjectPortals.Services.props" />
+</Project>

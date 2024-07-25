@@ -3673,11 +3673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Services\\GridProjectPortals.Services.csproj",
+      "projectUniqueName": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\GridProjectPortals.Services.csproj",
       "projectName": "GridProjectPortals.Services",
-      "projectPath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Services\\GridProjectPortals.Services.csproj",
+      "projectPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\GridProjectPortals.Services.csproj",
       "packagesPath": "C:\\Users\\ER\\.nuget\\packages\\",
-      "outputPath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Services\\obj\\",
+      "outputPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3694,8 +3694,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj": {
-              "projectPath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj"
+            "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj": {
+              "projectPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj"
             }
           }
         }
@@ -3754,5 +3754,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MimeKit' 4.5.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5",
+      "libraryId": "MimeKit",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

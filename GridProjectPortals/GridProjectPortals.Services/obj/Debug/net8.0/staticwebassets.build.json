@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "K9GM4cESs685fNC0CF11xlooiI/pcDSFSyQYpRjCsME=",
+  "Hash": "WNySmhlEqlHglUb/sa1VHCsoKMHBu8I7uEMOBTbfBfM=",
   "Source": "GridProjectPortals.Services",
   "BasePath": "_content/GridProjectPortals.Services",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.csproj",
+      "Identity": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.csproj",
       "Version": 2,
       "Source": "GridProjectPortals.DB",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

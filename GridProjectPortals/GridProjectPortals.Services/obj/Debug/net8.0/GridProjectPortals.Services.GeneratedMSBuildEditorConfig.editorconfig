@@ -9,11 +9,15 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GridProjectPortals.Services
 build_property.RootNamespace = GridProjectPortals.Services
-build_property.ProjectDir = D:\DemoGrid\GridProjectPortals\GridProjectPortals\GridProjectPortals.Services\
+build_property.ProjectDir = D:\MyDemoProjectPractice\demo\GridProjectPortals\GridProjectPortals.Services\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DemoGrid\GridProjectPortals\GridProjectPortals\GridProjectPortals.Services
+build_property.MSBuildProjectDirectory = D:\MyDemoProjectPractice\demo\GridProjectPortals\GridProjectPortals.Services
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/MyDemoProjectPractice/demo/GridProjectPortals/GridProjectPortals.Services/Tmp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VG1wXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

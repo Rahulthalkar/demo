@@ -5,6 +5,7 @@ using log4net;
 using MailKit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Configuration;
 
 namespace GridProjectPortals.Services.Controllers
 {
@@ -14,10 +15,13 @@ namespace GridProjectPortals.Services.Controllers
     {
 
         private readonly IMailServices _mailServices;
+        public readonly EmployeeService _employeeService;
 
-        public SendMailController(IMailServices mailServices)
+
+        public SendMailController(IConfiguration configuration,IMailServices mailServices, IEmployeeRepository employeeRepository)
         {
             _mailServices = mailServices;
+            _employeeService = new EmployeeService(configuration, employeeRepository);
         }
 
         [HttpPost("Send")]
@@ -34,6 +38,34 @@ namespace GridProjectPortals.Services.Controllers
                 throw ex;
             }
 
+        }
+        [Route("CreateUser")]
+        [HttpPost]
+        public async Task<IActionResult> CreateUser(AddEmployeesModel addEmployeesModel)
+        {
+           // log.Info($"{nameof(CreateUser)} method called with userdata: {addEmployeesModel}");
+            APIResult<string> response = new APIResult<string>();
+
+            if (addEmployeesModel != null)
+            {
+                response = _employeeService.CreateUser(addEmployeesModel);
+                if (response != null)
+                {
+                    var sendMail = new sendMail
+                    {
+                        MailTo = addEmployeesModel.Email, // User's email
+                        Subject = "Welcome to Our Service",
+                        FirstName = addEmployeesModel.FirstName,
+                        Body = $"<p>Thank you  {addEmployeesModel.FirstName} for creating an account with us!</p>"
+                    };
+                    _mailServices.SendEmailAsync(sendMail);
+                }
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest();
+            }
         }
 
     }

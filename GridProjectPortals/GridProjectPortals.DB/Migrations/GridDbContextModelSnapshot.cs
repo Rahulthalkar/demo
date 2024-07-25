@@ -22,6 +22,40 @@ namespace GridProjectPortals.DB.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("GridProjectPortals.Domain.Tables.tblComments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ReplayComment")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("createDate")
+                        .HasColumnType("datetime");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReplayComment");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("tblComments");
+                });
+
             modelBuilder.Entity("GridProjectPortals.Domain.Tables.tblEmployee", b =>
                 {
                     b.Property<int>("Id")
@@ -300,6 +334,50 @@ namespace GridProjectPortals.DB.Migrations
                         });
                 });
 
+            modelBuilder.Entity("GridProjectPortals.Domain.Tables.tblReplayComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CommentsId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReplayComments")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommentsId");
+
+                    b.ToTable("tblReplayComments");
+                });
+
+            modelBuilder.Entity("GridProjectPortals.Domain.Tables.tblComments", b =>
+                {
+                    b.HasOne("GridProjectPortals.Domain.Tables.tblComments", "CommentsById")
+                        .WithMany()
+                        .HasForeignKey("ReplayComment")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("GridProjectPortals.Domain.Tables.tblEmployee", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("CommentsById");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("GridProjectPortals.Domain.Tables.tblEmployee", b =>
                 {
                     b.HasOne("GridProjectPortals.Domain.Tables.tblEmployee", "UserCreatedBy")
@@ -315,6 +393,21 @@ namespace GridProjectPortals.DB.Migrations
                     b.Navigation("UserCreatedBy");
 
                     b.Navigation("UserUpdatedBy");
+                });
+
+            modelBuilder.Entity("GridProjectPortals.Domain.Tables.tblReplayComment", b =>
+                {
+                    b.HasOne("GridProjectPortals.Domain.Tables.tblComments", "CommentsTbl")
+                        .WithMany("Replay")
+                        .HasForeignKey("CommentsId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("CommentsTbl");
+                });
+
+            modelBuilder.Entity("GridProjectPortals.Domain.Tables.tblComments", b =>
+                {
+                    b.Navigation("Replay");
                 });
 #pragma warning restore 612, 618
         }

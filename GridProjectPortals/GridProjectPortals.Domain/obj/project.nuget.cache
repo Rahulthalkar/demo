@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rAXKJIn4lztTNzYhPQzby3V4IVpEk1WUlYvNFDYfer7L011EC4O6Db9yPEGxlse4QBpH6/XqPB4souOZrSnVHQ==",
+  "dgSpecHash": "vD45TWzS6nTTfO+DSPBBHfDlOitZVy/xleQ7SSNupTYtbemF4oyAnF4iKKarYeg5kIV3OcGmYgblNWz22MPBzw==",
   "success": true,
-  "projectFilePath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj",
+  "projectFilePath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ER\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ER\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

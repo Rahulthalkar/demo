@@ -19,8 +19,11 @@ import {
   EyeInvisibleFill,
   EyeInvisibleOutline,
   SearchOutline,
-  EditOutline
-
+  EditOutline,
+  FileTwoTone,
+  DownloadOutline,
+  PhoneOutline,
+  MailOutline
 } from '@ant-design/icons-angular/icons';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { matCircleOutline, matGridViewOutline, matSearchOutline } from '@ng-icons/material-icons/outline';
@@ -43,7 +46,11 @@ const icons = [MenuFoldOutline,
   FileTextOutline,
   EyeInvisibleOutline,
   SearchOutline,
-  EditOutline
+  EditOutline,
+  FileTwoTone,
+  DownloadOutline,
+  PhoneOutline,
+  MailOutline
 ];
 
 export function provideNzIcons(): EnvironmentProviders {

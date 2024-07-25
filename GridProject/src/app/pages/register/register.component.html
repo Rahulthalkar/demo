@@ -1,7 +1,7 @@
 <div class="flex h-screen justify-center items-center bg-gray-200">
     <div class="w-5/6 h-auto shadow-custom m-auto p-12 rounded-[18px] bg-white">
         <h3 class="text-center text-3xl mb-5">USER LOGIN</h3>
-        <form nz-form [formGroup]="loginForm" class="grid grid-cols-12 gap-x-5" (ngSubmit)="submitForm()">
+        <form nz-form [formGroup]="loginForm" class="grid grid-cols-12 gap-x-5" >
           <nz-form-item class="col-span-12 sm:col-span-6 lg:col-span-4">
               
             <nz-form-control nzErrorTip="Please enter your first name!">
@@ -81,13 +81,16 @@
                 <a class="">Forgot password</a>
               </div>
             </div> -->
-            <div class="col-span-12">
-              <button nz-button class="w-full theme-btn"  [nzType]="'primary'">Log in</button>
+            
            
-              <div class="mt-4 text-right"><span class="">Already have an account? </span><a [routerLink]="['/login']">Login</a></div> 
-   
-            </div>
                     </form>
+                  
+                    <div class="col-span-12">
+                      <button nz-button class="w-full theme-btn" (click)="submitForm()" [nzType]="'primary'">Log in</button>
+                   
+                      <div class="mt-4 text-right"><span class="">Already have an account? </span><a [routerLink]="['/login']">Login</a></div> 
+           
+                    </div>
     </div>
     
 </div>

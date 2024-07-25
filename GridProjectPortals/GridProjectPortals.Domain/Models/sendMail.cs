@@ -16,7 +16,8 @@ namespace GridProjectPortals.Domain.Models
         public string Subject { get; set; }
         [Required]
         public string Body { get; set; }
-        public IList<IFormFile> Attachment { get; set; }
+        public string FirstName { get; set; }
+        public IList<IFormFile>? Attachment { get; set; }
     }
     public class MailSettings
     {

@@ -283,7 +283,8 @@ namespace GridProjectPortals.DAL
                               FirstName=usr.FirstName,
                               LastName=usr.LastName,
                               Email=usr.Email,
-                              UserName=usr.UserName
+                              UserName=usr.UserName,
+                              mobileNo=usr.Phone
                           }).FirstOrDefault();
                 return user;
             }
@@ -381,5 +382,109 @@ namespace GridProjectPortals.DAL
             string hashedInputPassword = HashingUtility.HashString(password, salt);
             return hashedPassword == hashedInputPassword;
         }
+
+        public APIResult<string> Comments(CommentsrRequestModel commentsrRequestModel)
+        {
+            using (var dbcontext = new GridDbContext(connectionString))
+            {
+                APIResult<string> response = new APIResult<string>();
+                try
+                {
+                    var comments = new tblComments()
+                    {
+                        Id = 0,
+                        UserId = commentsrRequestModel.UserId,
+                        Comment = commentsrRequestModel.Comment,
+                        Name = commentsrRequestModel.Name,
+                        createDate= DateTime.Now,
+                    };
+                    dbcontext.tblComments.Add(comments);
+                    dbcontext.SaveChanges();
+
+                    response.IsSuccess=true;
+                    response.Value = "comment created succcess";
+
+                }catch (Exception ex)
+                {
+                    response.IsSuccess = false;
+                    response.Value = "failed to comments";
+                    return response;
+                }
+               return response;
+            }
+        }
+
+        public List<CommentsrResponseModel> GetCommentsByUserId(int userId)
+        {
+            using (var dbcontext = new GridDbContext(connectionString))
+            {
+                var comments = (from usr in dbcontext.tblEmployees
+                                join comm in dbcontext.tblComments on usr.Id equals comm.UserId
+                                where usr.Id == userId
+                                select new CommentsrResponseModel
+                                {
+                                    Id = comm.Id,
+                                    UserId = usr.Id,
+                                    Name = comm.Name,
+                                    Comment = comm.Comment,
+                                    createDate= comm.createDate,
+                                }).ToList();
+                return comments;
+            }
+        }
+
+        public APIResult<string> ReplayComments(ReplayCommentsrRequestModel replayCommentsrRequest)
+        {
+            using (var dbcontext = new GridDbContext(connectionString))
+            {
+                APIResult<string> response = new APIResult<string>();
+                try
+                {
+                    
+                    var comments = new tblComments()
+                    {
+                        Id = 0,
+                        UserId = replayCommentsrRequest.UserId,
+                        Comment = replayCommentsrRequest.Comment,
+                        Name = replayCommentsrRequest.Name,
+                        createDate = DateTime.Now,
+                        ReplayComment= replayCommentsrRequest.ReplayComment,
+                    };
+                    dbcontext.tblComments.Add(comments);
+                    dbcontext.SaveChanges();
+
+                    response.IsSuccess = true;
+                    response.Value = "comment created succcess";
+
+                }
+                catch (Exception ex)
+                {
+                    response.IsSuccess = false;
+                    response.Value = "failed to comments";
+                    return response;
+                }
+                return response;
+            }
+        }
+
+        public List<CommentsrResponseModel> GetCommentByCommentId(int userId, int commentId)
+        {
+            using (var dbcontext = new GridDbContext(connectionString))
+            {
+                var comments = (from usr in dbcontext.tblEmployees
+                                join comm in dbcontext.tblComments on usr.Id equals comm.UserId
+                                where usr.Id == userId && comm.ReplayComment == commentId
+                                select new CommentsrResponseModel
+                                {
+                                    Id = comm.Id,
+                                    UserId = usr.Id,
+                                    Name = comm.Name,
+                                    Comment = comm.Comment,
+                                    createDate = comm.createDate,
+                                }).ToList();
+                return comments;
+            }
+        }
+
     }
 }

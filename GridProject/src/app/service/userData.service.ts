@@ -6,7 +6,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { APIResult, Login, LoginResponse } from '../shared/interfaces/login';
 import { LoginAuthGuard } from '../Auth/login-auth.guard';
 import { AuthService } from '../Auth/auth.service';
-import { Observable, pipe } from 'rxjs';
+import { map, Observable, pipe } from 'rxjs';
 @Injectable({
     providedIn: 'root',
   })
@@ -135,7 +135,64 @@ export class UserService {
         .pipe((response: any) => {
             return response;
    });  
+  }
+  UpdateEmployees(formData: any): Observable<any> {
+    var httpOptionsToUse = this.getHttpOptions();
+    return this.http
+        .post(this.urlFor + 'api/Employee/UpdateEmployees', formData, httpOptionsToUse)
+        .pipe((response: any) => {
+            return response;
+        });
 }
+  GetUserDetailById(userId:number): Observable<any> {
+    const httpOptionsToUse = this.getHttpOptions();
+
+    const url = `${this.urlFor}api/Employee/GetUserDetailById?userId=${userId}`;
+    return this.http
+        .post(url, httpOptionsToUse)
+        .pipe((response: any) => {
+            return response;
+   });  
+  }
+
+
+  Comments(userData: any): Observable<any> {
+    var httpOptionsToUse = this.getHttpOptions();
+    return this.http
+      .post(this.urlFor + `api/Comments/Comments`, userData, httpOptionsToUse)
+      .pipe((response: any) => {
+        return response;
+      });
+  }
+  ReplayComments(userData: any): Observable<any> {
+    var httpOptionsToUse = this.getHttpOptions();
+    return this.http
+      .post(this.urlFor + `api/Comments/ReplayComments`, userData, httpOptionsToUse)
+      .pipe((response: any) => {
+        return response;
+      });
+  }
+  GetCommentById(userId:number): Observable<any> {
+    const httpOptionsToUse = this.getHttpOptions();
+
+    const url = `${this.urlFor}api/Comments/GetCommentById?userId=${userId}`;
+    return this.http
+        .post(url, httpOptionsToUse)
+        .pipe((response: any) => {
+            return response;
+   });  
+  }
+
+  GetCommentByCommentId(userId:number,replayId:number): Observable<any> {
+    const httpOptionsToUse = this.getHttpOptions();
+
+    const url = `${this.urlFor}api/Comments/GetCommentByCommentId?userId=${userId}&commentId=${replayId}`;
+    return this.http
+        .post(url, httpOptionsToUse)
+        .pipe((response: any) => {
+            return response;
+   });  
+  }
     ShowNotification(type: string, title: string, details: string): void {
       this.notification.create(type, title, details);
     }

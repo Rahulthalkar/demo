@@ -9,12 +9,17 @@ import { UserService } from '../../service/userData.service';
 import { Router, RouterLink } from '@angular/router';
 import {NzSelectModule} from 'ng-zorro-antd/select';
 import { GriddetailgridService } from '../../service/griddetailgrid.service';
+import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
+import {NzModalModule  } from 'ng-zorro-antd/modal';
+
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [ReactiveFormsModule,NzButtonModule,NzFormModule,NzIconModule,NzInputModule,NzCheckboxModule,
     RouterLink,
-    NzSelectModule
+    NzSelectModule,
+    NzUploadModule,
+    NzModalModule
   ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
@@ -35,10 +40,13 @@ export class RegisterComponent {
         email: ['', [Validators.required,Validators.email]],
         password: ['', [Validators.required]],
         phone: ['', [Validators.required]],
-        isActive:[true]
+        isActive:[true],
+        images:[[]]
       });
     }
   submitForm(): void {
+    console.log(this.loginForm.value);
+    
     if (this.loginForm.valid) {
       this.userData.registerUser(this.loginForm.value).subscribe(
         response => {
@@ -60,4 +68,5 @@ export class RegisterComponent {
       });
     }
   }
+  
 }

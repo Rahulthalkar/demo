@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj": {}
+    "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj": {}
   },
   "projects": {
-    "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj": {
+    "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj",
+        "projectUniqueName": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj",
         "projectName": "GridProjectPortals.Domain",
-        "projectPath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj",
+        "projectPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj",
         "packagesPath": "C:\\Users\\ER\\.nuget\\packages\\",
-        "outputPath": "D:\\DemoGrid\\GridProjectPortals\\GridProjectPortals\\GridProjectPortals.Domain\\obj\\",
+        "outputPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ER\\AppData\\Roaming\\NuGet\\NuGet.Config",

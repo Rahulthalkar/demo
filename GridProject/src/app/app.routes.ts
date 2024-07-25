@@ -7,6 +7,9 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ViewsComponent } from './pages/views/views.component';
 import { AutoComplatedTextComponent } from './pages/auto-complated-text/auto-complated-text.component';
 import { UpdatePasswordComponent } from './pages/update-password/update-password.component';
+import { MyProfileComponent } from './pages/my-profile/my-profile.component';
+import { ProfileEditComponent } from './pages/profile-edit/profile-edit.component';
+import { CommentsComponent } from './pages/comments/comments.component';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/employee' },
@@ -14,6 +17,7 @@ export const routes: Routes = [
   {
     path:'welcome',
     component:WelcomeComponent,
+    canActivate:[MasterGuard]
   }, 
   {
     path:'register',
@@ -21,7 +25,8 @@ export const routes: Routes = [
   },
   {
     path:'views',
-    component:ViewsComponent
+    component:ViewsComponent,
+    canActivate:[MasterGuard]
   },
   {
     path:'login',
@@ -29,11 +34,27 @@ export const routes: Routes = [
   },
   {
     path:'auto',
-    component:AutoComplatedTextComponent
+    component:AutoComplatedTextComponent,
+    canActivate:[MasterGuard]
   },
   {
     path:'update-password',
-    component:UpdatePasswordComponent
+    component:UpdatePasswordComponent,
+    canActivate:[MasterGuard]
+  },{
+    path:'my-profile',
+    component:MyProfileComponent,
+    canActivate:[MasterGuard]
+
+  } ,{
+    path:'edit-profile',
+    component:ProfileEditComponent,
+    canActivate:[MasterGuard]
+
+  }  
+  ,{
+    path:'comments',
+    component:CommentsComponent
   }  
  
 ];

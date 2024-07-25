@@ -24,5 +24,13 @@ namespace GridProjectPortals.DAL.Interface
 
         public APIResult<string> ValidateUser(string email, string password);
 
+
+        // comments 
+        public APIResult<string> Comments(CommentsrRequestModel commentsrRequestModel);
+        public List<CommentsrResponseModel> GetCommentsByUserId(int userId);
+        public APIResult<string> ReplayComments(ReplayCommentsrRequestModel replayCommentsrRequest);
+        public List<CommentsrResponseModel> GetCommentByCommentId(int userId,int commentsId);
+
+
     }
 }

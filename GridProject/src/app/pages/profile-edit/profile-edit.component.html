@@ -1,0 +1,56 @@
+<div class="container p-3 bg-white">
+    <div class=" flex justify-between bg-red-50 border border-orange-400 rounded-md p-4">
+        <div class="block">
+            <h1 class="my-1">{{fullName()}}</h1>
+            <h1>{{email()}}</h1>
+        </div>
+    </div>
+    
+        <form nz-form  class="gap-2 mt-7" [formGroup]="profileUpdateForm">
+            <nz-form-item>
+              <nz-form-label [nzSpan]="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24" nzFor="firstName">First name</nz-form-label>
+              <nz-form-control nzErrorTip="Please input your firstname!">
+                <nz-input-group nzPrefixIcon="user" class="text-input" >
+                  <input type="text" nz-input formControlName="firstName" placeholder="Enter your first name" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+                <nz-form-label [nzSpan]="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24" nzFor="lastName">Last name</nz-form-label>
+                <nz-form-control nzErrorTip="Please input your lastname!">
+                  <nz-input-group nzPrefixIcon="user" class="text-input">
+                    <input type="text" nz-input formControlName="lastName" placeholder="Enter your last name" />
+                  </nz-input-group>
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+                <nz-form-label [nzSpan]="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24" nzFor="userName">User name</nz-form-label>
+                <nz-form-control nzErrorTip="Please input your username!">
+                  <nz-input-group nzPrefixIcon="user" class="text-input">
+                    <input type="text" nz-input formControlName="userName" placeholder="Enter your user name" />
+                  </nz-input-group>
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+                <nz-form-label [nzSpan]="6" nzSm="24" nzMd="24" nzLg="24" nzXl="24" nzFor="email">E-mail</nz-form-label>
+                <nz-form-control nzErrorTip="Please input your e-mail!">
+                  <nz-input-group nzPrefixIcon="mail" class="text-input">
+                    <input type="email" nz-input formControlName="email" placeholder="Enter your valid email" />
+                  </nz-input-group>
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+                <nz-form-label [nzSpan]="6" nzSm="24" nzMd="24" nzLg="24" nzXl="24" nzFor="Phone">Phone </nz-form-label>
+                <nz-form-control nzErrorTip="Please input your mobile no">
+                  <nz-input-group nzPrefixIcon="phone" class="text-input">
+                    <input type="number" nz-input formControlName="phone" placeholder="Enter your valid phone" />
+                  </nz-input-group>
+                </nz-form-control>
+            </nz-form-item>
+          </form>
+          <div class="flex justify-between gap-5">
+            <button nz-button class="w-full theme-btn"  [nzType]="'default'" routerLink="/my-profile">Cancel</button>
+            <button nz-button class="w-full theme-btn"  [nzType]="'primary'" [disabled]="!profileUpdateForm.valid" (click)="updateProfile()">Update</button>
+        </div>
+    </div>
+

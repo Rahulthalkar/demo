@@ -1,0 +1,43 @@
+<div class="container bg-white p-3">
+        <div class=" flex justify-between bg-red-50 border border-orange-400 rounded-md p-4">
+            <div class="block">
+                <h1 class="my-1">{{fullName()}}</h1>
+                <h1>{{email()}}</h1>
+            </div>
+            <img src="../../../assets/images/Edit.svg" routerLink="/edit-profile" class="end-0 cursor-pointer" alt="">
+        </div>
+        <div class="grid grid-cols-12 gay-3 mt-7 p-4">
+            <div class="col-span-12">
+                First Name
+            </div>
+            <div class="col-span-12 border-b bottom-1 flex py-4 text-gray-400">
+                <img src="../../../assets/images/user1.svg" alt="" class="pr-4"><span>{{userViewModel?.firstName}}</span>
+            </div>
+            <div class="col-span-12 mt-2">
+                Last Name
+            </div>
+            <div class="col-span-12 border-b bottom-1 flex py-4 text-gray-400">
+                <img src="../../../assets/images/user1.svg" alt="" class="pr-4"><span>{{userViewModel?.lastName}}</span>
+            </div>
+            <div class="col-span-12 mt-2">
+                User Name
+            </div>
+            <div class="col-span-12 border-b bottom-1 flex py-4 text-gray-400">
+                <img src="../../../assets/images/user1.svg" alt="" class="pr-4"><span>{{userViewModel?.userName}}</span>
+            </div>
+            <div class="col-span-12 mt-2">
+                Email
+            </div>
+            <div class="col-span-12 border-b bottom-1 flex py-4 text-gray-400">
+                <img src="../../../assets/images/mail 1.svg" alt="" class="pr-4"><span>{{userViewModel?.email}}</span>
+            </div>
+            <div class="col-span-12 mt-2">
+                Mobile no
+            </div>
+            <div class="col-span-12 border-b bottom-1 flex py-4 text-gray-400">
+                <img src="../../../assets/images/Frame-mobile.svg" alt="" class="pr-4"><span>{{userViewModel?.mobileNo}}</span>
+            </div>
+        </div>
+</div>
+
+

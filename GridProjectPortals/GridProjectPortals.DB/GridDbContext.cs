@@ -110,5 +110,7 @@ namespace GridProjectPortals.DB
         public DbSet<tblGridColumnDef> tblGridColumnDefs { get; set; }
         public DbSet<tblEmployee> tblEmployees { get; set; }
         public DbSet<tblGridDataTypeOperator> tblGridDataTypeOperators { get; set;}
+        public DbSet<tblComments> tblComments { get; set; }
+        public DbSet<tblReplayComment> tblReplayComments { get; set; }
     }
 }
