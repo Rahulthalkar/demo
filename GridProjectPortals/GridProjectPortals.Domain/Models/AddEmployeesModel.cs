@@ -16,6 +16,7 @@ namespace GridProjectPortals.Domain.Models
         public string? Password { get; set; }
         public string Email { get; set; }
         public string? Phone { get; set; }
+        public byte[]? Photo { get; set; }
         public string? Salt { get; set; }
         public bool IsActive { get; set; }
     }
@@ -27,6 +28,8 @@ namespace GridProjectPortals.Domain.Models
         public string UserName { get; set; }
         public string Email { get; set; }
         public string mobileNo { get; set; }
+        public byte[]? Photo { get; set; }
+
     }
     public class LoginRequestModel
     {

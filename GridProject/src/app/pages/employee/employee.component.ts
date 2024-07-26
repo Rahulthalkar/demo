@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal, WritableSignal } from '@angular/core';
 import { CommonGridComponent } from '../../component/common-grid/common-grid.component';
 import { GriddetailgridService } from '../../service/griddetailgrid.service';
 import { employeeDetails } from '../../shared/interfaces/emplpyeeDetails';
 import { FilterOperator, GridHeaderColumn } from '../../shared/interfaces/gridDetail';
-
+import { NzUploadFile, NzUploadModule, NzUploadXHRArgs } from 'ng-zorro-antd/upload';
+import { Observable, Observer, Subscription } from 'rxjs';
 @Component({
   selector: 'app-employee',
   standalone: true,
-  imports: [CommonGridComponent],
+  imports: [CommonGridComponent,NzUploadModule],
   templateUrl: './employee.component.html',
   styleUrl: './employee.component.css'
 })
@@ -102,6 +103,8 @@ export class EmployeeComponent implements OnInit {
 employeeList:employeeDetails[]=[];
 employeeHeaderColumn:GridHeaderColumn[]=[];
 listOfFilterOperator:FilterOperator[]=[];
+
+
 constructor(private employeeService:GriddetailgridService){
 
 }
@@ -127,4 +130,5 @@ this.employeeService.GetOperatorByType('').subscribe((data: any) => {
     
   });
 }
+
 }

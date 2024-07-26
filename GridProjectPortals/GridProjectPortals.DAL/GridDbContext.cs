@@ -22,7 +22,7 @@ namespace GridProjectPortals.DAL
         public DbSet<tblGridDataTypeOperator> tblGridDataTypeOperators { get; set; }
         public DbSet<tblComments> tblComments { get; set; }
         public DbSet<tblReplayComment> tblReplayComments { get; set; }
-
+        public DbSet<tblUser> tblUsers { get; set; }
 
     }
 }

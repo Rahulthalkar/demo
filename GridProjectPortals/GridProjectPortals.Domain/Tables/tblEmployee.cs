@@ -19,6 +19,7 @@ namespace GridProjectPortals.Domain.Tables
         public string? Password { get; set; }
         public string Email { get; set; }
         public string? Phone { get; set;}
+        public byte[]? Photo { get; set; }
         public string? Salt { get; set; }
         public bool IsActive { get; set; }
         public int? FailedLoginAttempts { get; set; }

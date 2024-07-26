@@ -27,10 +27,19 @@
             <td>{{ data.lastName }}</td>
             <td>{{ data.userName}}</td>
             <td>{{ data.phone}}</td>
+            <td> <img class="w-[100px] rounded-md" [src]="imgPrefix + data.photo" alt=""></td>       
             </tr>
         } 
         </tbody>
     </nz-table>
+      <!-- Display image if available, otherwise show skeleton loader -->
+      <!-- @if(sittingArrangementsDetail().photo){
+        <img class="w-[100px] rounded-md" [srcset]="imgPrefix+sittingArrangementsDetail().photo" alt="">
+        }
+        @else{
+        <nz-skeleton-element class="rounded-md" nzType="image" [nzActive]="isLoading()">
+        </nz-skeleton-element>
+        } -->
     
 </div>
 

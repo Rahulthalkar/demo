@@ -22,8 +22,11 @@ interface DataItem {
 })
 export class WelcomeComponent implements OnInit {
   employeeList:employeeDetails[]=[];
+  //sittingArrangementsDetail = signal(null)
   userProfile: any = {};
   searchCriteria: string = '';
+ // imgPrefix = 'data:image/png;base64,'
+  imgPrefix= 'data:image/png;base64,';
   listOfColumn = [
     {
       title: 'First Name',
@@ -45,6 +48,12 @@ export class WelcomeComponent implements OnInit {
       compare: (a: DataItem, b: DataItem) =>  a.phone.localeCompare(b.phone),
 
       priority: 1
+    },
+    {
+      title: 'Photo',
+      compare: (a: DataItem, b: DataItem) =>  a.phone.localeCompare(b.phone),
+
+      priority: 1
     }
   ];
   constructor(private employeeService:GriddetailgridService,
@@ -62,6 +71,7 @@ export class WelcomeComponent implements OnInit {
     });
 
   }
+
   GetEmployeeList(){
     this.employeeService.GetEmployeeList().subscribe((data: any) => {
       this.employeeList = data.value as employeeDetails[];
