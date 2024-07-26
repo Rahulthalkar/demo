@@ -18,6 +18,7 @@ export class ProfileEditComponent implements OnInit{
   userViewModel:any;
   profileUpdateForm:FormGroup;
   userValidId=signal(0);
+  imgPrefix= 'data:image/png;base64,';
   constructor(private userService:UserService,
     private fb:FormBuilder,private router:Router
   ){
@@ -32,7 +33,8 @@ export class ProfileEditComponent implements OnInit{
       lastName:['',[Validators.required]],
       userName:['',[Validators.required]],
       email:['',[Validators.required]],
-      phone:['',[Validators.required]]
+      phone:['',[Validators.required]],
+      photo:['']
     })
   }
   ngOnInit(): void {
@@ -50,6 +52,7 @@ export class ProfileEditComponent implements OnInit{
               userName:response.value.userName,
               email:response.value.email,
               phone:response.value.mobileNo,
+              photo:response.value.photo,
             });
             
           }

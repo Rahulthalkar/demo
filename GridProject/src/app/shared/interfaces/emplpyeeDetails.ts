@@ -4,4 +4,5 @@ export interface employeeDetails{
     lastName:string;
     userName:string;
     phone:string;
+    photo:string;
 }

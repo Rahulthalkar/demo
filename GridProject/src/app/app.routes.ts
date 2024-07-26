@@ -10,6 +10,7 @@ import { UpdatePasswordComponent } from './pages/update-password/update-password
 import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { ProfileEditComponent } from './pages/profile-edit/profile-edit.component';
 import { CommentsComponent } from './pages/comments/comments.component';
+import { UploadImagesComponent } from './pages/upload-images/upload-images.component';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/employee' },
@@ -56,5 +57,8 @@ export const routes: Routes = [
     path:'comments',
     component:CommentsComponent
   }  
- 
+ ,{
+  path:'upload',
+  component:UploadImagesComponent
+} 
 ];

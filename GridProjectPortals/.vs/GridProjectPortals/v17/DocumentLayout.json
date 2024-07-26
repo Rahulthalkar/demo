@@ -3,6 +3,90 @@
   "WorkspaceRootPath": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\interface\\iuserrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\interface\\iuserrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.bll\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|solutionrelative:gridprojectportals.bll\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\interface\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\interface\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.bll\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|solutionrelative:gridprojectportals.bll\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\sendmailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\sendmailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.domain\\models\\userrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|solutionrelative:gridprojectportals.domain\\models\\userrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.bll\\cryptography.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|solutionrelative:gridprojectportals.bll\\cryptography.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\controllers\\sendmailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\controllers\\sendmailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240726072958_tbluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GridProjectPortals.DB\\Migrations\\20240726072958_tbluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\griddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\griddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.db\\griddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|solutionrelative:gridprojectportals.db\\griddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.domain\\tables\\tbluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|solutionrelative:gridprojectportals.domain\\tables\\tbluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.domain\\models\\addemployeesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|solutionrelative:gridprojectportals.domain\\models\\addemployeesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.domain\\models\\employedetailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|solutionrelative:gridprojectportals.domain\\models\\employedetailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.domain\\tables\\tblemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|solutionrelative:gridprojectportals.domain\\tables\\tblemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.db\\migrations\\20240722045026_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|solutionrelative:gridprojectportals.db\\migrations\\20240722045026_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,44 +103,12 @@
       "RelativeMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|solutionrelative:gridprojectportals.domain\\tables\\tblcomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\griddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\griddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.db\\griddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|solutionrelative:gridprojectportals.db\\griddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.db\\gridprojectportals.db.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|solutionrelative:gridprojectportals.db\\gridprojectportals.db.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.domain\\models\\addemployeesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|solutionrelative:gridprojectportals.domain\\models\\addemployeesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\interface\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\interface\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.dal\\interface\\igridsearchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07CF45F0-F357-4A25-900B-71C9B4A468A1}|GridProjectPortals.DAL\\GridProjectPortals.DAL.csproj|solutionrelative:gridprojectportals.dal\\interface\\igridsearchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.bll\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|solutionrelative:gridprojectportals.bll\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240718094120_comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,16 +135,8 @@
       "RelativeMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|solutionrelative:gridprojectportals.db\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.domain\\tables\\tblemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|solutionrelative:gridprojectportals.domain\\tables\\tblemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.bll\\mailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C7E0C4F-8568-4488-8379-449D8BC95E67}|GridProjectPortals.BLL\\GridProjectPortals.BLL.csproj|solutionrelative:gridprojectportals.bll\\mailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\controllers\\sendmailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\controllers\\sendmailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB49BA1E-A273-4D95-8A64-A7167DAFC800}|GridProjectPortals.Domain\\GridProjectPortals.Domain.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.domain\\models\\sendmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -105,6 +149,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.services\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1AD021E0-7E36-4F1A-932B-D1B575FD063C}|GridProjectPortals.Services\\GridProjectPortals.Services.csproj|solutionrelative:gridprojectportals.services\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|d:\\mydemoprojectpractice\\demo\\gridprojectportals\\gridprojectportals.db\\migrations\\20240725055057_updatetblemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA14927-8851-4E19-8B9F-B1802A8FBC00}|GridProjectPortals.DB\\GridProjectPortals.DB.csproj|solutionrelative:gridprojectportals.db\\migrations\\20240725055057_updatetblemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,7 +162,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,44 +182,277 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240722045026_db.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240722045026_db.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240722045026_db.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240722045026_db.cs",
-              "RelativeToolTip": "GridProjectPortals.DB\\Migrations\\20240722045026_db.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\UserRepository.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\UserRepository.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\UserRepository.cs",
+              "RelativeToolTip": "GridProjectPortals.DAL\\UserRepository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAiwCIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:50:27.094Z",
+              "WhenOpened": "2024-07-26T06:40:56.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\UserService.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.BLL\\UserService.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\UserService.cs",
+              "RelativeToolTip": "GridProjectPortals.BLL\\UserService.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAiwDgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T07:02:50.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20240722044816_db.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240722044816_db.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240722044816_db.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240722044816_db.cs",
-              "RelativeToolTip": "GridProjectPortals.DB\\Migrations\\20240722044816_db.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "IUserRespository.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\Interface\\IUserRespository.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\Interface\\IUserRespository.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\Interface\\IUserRespository.cs",
+              "RelativeToolTip": "GridProjectPortals.DAL\\Interface\\IUserRespository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAnwAsAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:48:16.563Z"
+              "WhenOpened": "2024-07-26T06:36:10.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\Interface\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\Interface\\IEmployeeRepository.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\Interface\\IEmployeeRepository.cs",
+              "RelativeToolTip": "GridProjectPortals.DAL\\Interface\\IEmployeeRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAIA0wBUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T12:10:04.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\EmployeeRepository.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\EmployeeRepository.cs",
+              "RelativeToolTip": "GridProjectPortals.DAL\\EmployeeRepository.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAmwDoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T07:48:34.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Services\\Controllers\\RegisterController.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "GridProjectPortals.Services\\Controllers\\RegisterController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAawC0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T07:17:48.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "GridProjectPortals.DB.http",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.http",
-              "RelativeDocumentMoniker": "GridProjectPortals.DB\\GridProjectPortals.DB.http",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.http",
-              "RelativeToolTip": "GridProjectPortals.DB\\GridProjectPortals.DB.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-07-22T04:41:18.458Z"
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.BLL\\EmployeeService.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\EmployeeService.cs",
+              "RelativeToolTip": "GridProjectPortals.BLL\\EmployeeService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwFIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T07:36:14.981Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Services\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "GridProjectPortals.Services\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAswEQAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T09:20:30.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SendMailRepository.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\SendMailRepository.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\SendMailRepository.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\SendMailRepository.cs",
+              "RelativeToolTip": "GridProjectPortals.DAL\\SendMailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T09:07:47.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "userRequestModel.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\userRequestModel.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Models\\userRequestModel.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\userRequestModel.cs",
+              "RelativeToolTip": "GridProjectPortals.Domain\\Models\\userRequestModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAkwBQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T06:38:10.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cryptography.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\Cryptography.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.BLL\\Cryptography.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\Cryptography.cs",
+              "RelativeToolTip": "GridProjectPortals.BLL\\Cryptography.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAYwBIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T06:57:14.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Program.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Services\\Program.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Program.cs",
+              "RelativeToolTip": "GridProjectPortals.Services\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T11:59:48.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SendMailController.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\SendMailController.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Services\\Controllers\\SendMailController.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\SendMailController.cs",
+              "RelativeToolTip": "GridProjectPortals.Services\\Controllers\\SendMailController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T09:14:43.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240726072958_tbluser.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240726072958_tbluser.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240726072958_tbluser.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240726072958_tbluser.cs",
+              "RelativeToolTip": "GridProjectPortals.DB\\Migrations\\20240726072958_tbluser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T07:29:58.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Services\\Controllers\\CommentsController.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "GridProjectPortals.Services\\Controllers\\CommentsController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAFUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T12:40:23.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GridDbContext.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\GridDbContext.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\GridDbContext.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\GridDbContext.cs",
+              "RelativeToolTip": "GridProjectPortals.DAL\\GridDbContext.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA9wBgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T12:05:58.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GridDbContext.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridDbContext.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DB\\GridDbContext.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridDbContext.cs",
+              "RelativeToolTip": "GridProjectPortals.DB\\GridDbContext.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAA9wHIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T12:05:17.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "tblUser.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Tables\\tblUser.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Tables\\tblUser.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Tables\\tblUser.cs",
+              "RelativeToolTip": "GridProjectPortals.Domain\\Tables\\tblUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T06:47:06.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddEmployeesModel.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\AddEmployeesModel.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Models\\AddEmployeesModel.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\AddEmployeesModel.cs",
+              "RelativeToolTip": "GridProjectPortals.Domain\\Models\\AddEmployeesModel.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T07:12:21.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20240722045026_db.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240722045026_db.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240722045026_db.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240722045026_db.cs",
+              "RelativeToolTip": "GridProjectPortals.DB\\Migrations\\20240722045026_db.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T04:50:27.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EmployeDetailModel.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\EmployeDetailModel.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Models\\EmployeDetailModel.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\EmployeDetailModel.cs",
+              "RelativeToolTip": "GridProjectPortals.Domain\\Models\\EmployeDetailModel.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAkwBoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:57:12.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "tblReplayComment.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Tables\\tblReplayComment.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Tables\\tblReplayComment.cs",
@@ -183,43 +464,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddEmployeesModel.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\AddEmployeesModel.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Models\\AddEmployeesModel.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\AddEmployeesModel.cs",
-              "RelativeToolTip": "GridProjectPortals.Domain\\Models\\AddEmployeesModel.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAA6wFUAAAAuAAAA",
+              "DocumentIndex": 37,
+              "Title": "20240725055057_updatetblEmp.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240725055057_updatetblEmp.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240725055057_updatetblEmp.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240725055057_updatetblEmp.cs",
+              "RelativeToolTip": "GridProjectPortals.DB\\Migrations\\20240725055057_updatetblEmp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T07:12:21.586Z"
+              "WhenOpened": "2024-07-25T05:50:57.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GridDbContext.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridDbContext.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.DB\\GridDbContext.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridDbContext.cs",
-              "RelativeToolTip": "GridProjectPortals.DB\\GridDbContext.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAwwHEAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T12:05:17.055Z"
+              "DocumentIndex": 25,
+              "Title": "GridProjectPortals.DB.http",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.http",
+              "RelativeDocumentMoniker": "GridProjectPortals.DB\\GridProjectPortals.DB.http",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\GridProjectPortals.DB.http",
+              "RelativeToolTip": "GridProjectPortals.DB\\GridProjectPortals.DB.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-07-22T04:41:18.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GridDbContext.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\GridDbContext.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\GridDbContext.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\GridDbContext.cs",
-              "RelativeToolTip": "GridProjectPortals.DAL\\GridDbContext.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAwwBgAAAAAAAAA",
+              "DocumentIndex": 20,
+              "Title": "tblEmployee.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Tables\\tblEmployee.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Tables\\tblEmployee.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Tables\\tblEmployee.cs",
+              "RelativeToolTip": "GridProjectPortals.Domain\\Tables\\tblEmployee.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAqwBUAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T12:05:58.045Z"
+              "WhenOpened": "2024-07-17T07:14:09.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 23,
+              "Title": "20240722044816_db.cs",
+              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240722044816_db.cs",
+              "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240722044816_db.cs",
+              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240722044816_db.cs",
+              "RelativeToolTip": "GridProjectPortals.DB\\Migrations\\20240722044816_db.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T04:48:16.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "tblComments.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Tables\\tblComments.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Tables\\tblComments.cs",
@@ -231,56 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\EmployeeRepository.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\EmployeeRepository.cs",
-              "RelativeToolTip": "GridProjectPortals.DAL\\EmployeeRepository.cs",
-              "ViewState": "AQIAALEBAAAAAAAAAAAAAOMBAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T07:48:34.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\Interface\\IEmployeeRepository.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.DAL\\Interface\\IEmployeeRepository.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\Interface\\IEmployeeRepository.cs",
-              "RelativeToolTip": "GridProjectPortals.DAL\\Interface\\IEmployeeRepository.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAIAxwB8AAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T12:10:04.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.Services\\Controllers\\EmployeeController.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "GridProjectPortals.Services\\Controllers\\EmployeeController.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAA9wCcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:20:30.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CommentsController.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\CommentsController.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.Services\\Controllers\\CommentsController.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\CommentsController.cs",
-              "RelativeToolTip": "GridProjectPortals.Services\\Controllers\\CommentsController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAgwFUAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T12:40:23.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 26,
               "Title": "IGridSearchRepository.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DAL\\Interface\\IGridSearchRepository.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.DAL\\Interface\\IGridSearchRepository.cs",
@@ -292,20 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.BLL\\EmployeeService.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\EmployeeService.cs",
-              "RelativeToolTip": "GridProjectPortals.BLL\\EmployeeService.cs",
-              "ViewState": "AQIAAEQBAAAAAAAAAAAowEsBAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T07:36:14.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
               "Title": "20240718093755_sss.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240718093755_sss.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240718093755_sss.cs",
@@ -317,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 30,
               "Title": "20240718093644_ss.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240718093644_ss.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240718093644_ss.cs",
@@ -329,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "20240718094120_comments.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240718094120_comments.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240718094120_comments.cs",
@@ -341,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "20240718093925_comments.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240718093925_comments.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240718093925_comments.cs",
@@ -353,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 31,
               "Title": "20240718090308_d.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\Migrations\\20240718090308_d.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.DB\\Migrations\\20240718090308_d.cs",
@@ -365,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.DB\\appsettings.json",
               "RelativeDocumentMoniker": "GridProjectPortals.DB\\appsettings.json",
@@ -377,20 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SendMailController.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\SendMailController.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.Services\\Controllers\\SendMailController.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Controllers\\SendMailController.cs",
-              "RelativeToolTip": "GridProjectPortals.Services\\Controllers\\SendMailController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAlwCwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:14:43.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 33,
               "Title": "MailServices.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.BLL\\MailServices.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.BLL\\MailServices.cs",
@@ -403,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 36,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\appsettings.json",
               "RelativeDocumentMoniker": "GridProjectPortals.Services\\appsettings.json",
@@ -415,19 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "tblEmployee.cs",
-              "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Tables\\tblEmployee.cs",
-              "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Tables\\tblEmployee.cs",
-              "ToolTip": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Tables\\tblEmployee.cs",
-              "RelativeToolTip": "GridProjectPortals.Domain\\Tables\\tblEmployee.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA5wBQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T07:14:09.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 34,
               "Title": "sendMail.cs",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Domain\\Models\\sendMail.cs",
               "RelativeDocumentMoniker": "GridProjectPortals.Domain\\Models\\sendMail.cs",
@@ -439,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 35,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\MyDemoProjectPractice\\demo\\GridProjectPortals\\GridProjectPortals.Services\\Tmp\\Index.cshtml",
               "RelativeDocumentMoniker": "GridProjectPortals.Services\\Tmp\\Index.cshtml",

@@ -25,7 +25,9 @@ builder.Services.AddCors(o => o.AddPolicy("AppCORSPolicy", builder =>
 builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();
 builder.Services.AddScoped<IGridSearchRepository, GridSearchRepository>();
 builder.Services.AddTransient<ISendIMailRepository,SendMailRepository>();
-builder.Services.AddScoped<IMailServices,MailServices>();
+builder.Services.AddScoped<IMailServices, MailServices>();
+builder.Services.AddScoped<IUserRespository,UserRepository>();
+builder.Services.AddScoped<Cryptography>();
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddSwaggerGen(swagger =>

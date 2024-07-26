@@ -37,6 +37,7 @@ namespace GridProjectPortals.DAL
                         Email = addEmployeesModel.Email,
                         Password = addEmployeesModel.Password,
                         Salt = addEmployeesModel.Salt,
+                        Photo = addEmployeesModel.Photo,
 
                     };
                     dbcontext.tblEmployees.Add(empCreate);
@@ -67,6 +68,8 @@ namespace GridProjectPortals.DAL
                     LastName = e.LastName,
                     UserName = e.UserName,
                     Phone = e.Phone,
+                    Photo= e.Photo,
+                    
                 }).ToList();
                 return empDetails;
 
@@ -165,6 +168,7 @@ namespace GridProjectPortals.DAL
                     dataUpdate.LastName = employeUpdateModel.LastName;
                     dataUpdate.UserName = employeUpdateModel.UserName;
                     dataUpdate.Phone = employeUpdateModel.Phone;
+                    dataUpdate.Photo = employeUpdateModel.Photo;
 
 
                     try
@@ -284,7 +288,9 @@ namespace GridProjectPortals.DAL
                               LastName=usr.LastName,
                               Email=usr.Email,
                               UserName=usr.UserName,
-                              mobileNo=usr.Phone
+                              mobileNo=usr.Phone,
+                              Photo=usr.Photo
+                              
                           }).FirstOrDefault();
                 return user;
             }

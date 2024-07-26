@@ -13,6 +13,8 @@ export class MyProfileComponent implements OnInit {
   fullName=signal('');
   email=signal('');
   userViewModel:any;
+  imgPrefix= 'data:image/png;base64,';
+  
   constructor(private userService:UserService){
   }
   ngOnInit(): void {

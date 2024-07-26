@@ -15,6 +15,7 @@ namespace GridProjectPortals.Domain.Models
         public string? Password { get; set; }
         public string Email { get; set; }
         public string? Phone { get; set; }
+        public byte[]? Photo { get; set; }
     }
     public class EmployeUpdateModel
     {
@@ -23,5 +24,8 @@ namespace GridProjectPortals.Domain.Models
         public string? LastName { get; set; }
         public string? UserName { get; set; }
         public string? Phone { get; set; }
+        public byte[]? Photo { get; set; }
+
+
     }
 }

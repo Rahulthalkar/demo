@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GridProjectPortals.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56eda04f33a57b42b56647ee694f1a4aad9ad2b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb7428abbf9de30685176cd1d26b1b9b00b48f9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GridProjectPortals.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GridProjectPortals.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

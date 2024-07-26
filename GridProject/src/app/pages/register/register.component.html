@@ -81,7 +81,38 @@
                 <a class="">Forgot password</a>
               </div>
             </div> -->
-            
+            <nz-form-item class="mt-5">
+              <nz-form-label [nzSm]="24" [nzLg]="24" [nzXs]="24" [nzXl]="24" nzFor="uploadImage"></nz-form-label>
+              <nz-form-control>
+
+                <input nz-input type="file" formControlName="photo" id="uploadImage" name="uploadImage"  (change)="onFileSelected($event)">
+                  <!-- <nz-upload class="avatar-uploader " nzName="avatar" nzListType="picture-card"
+                      [nzShowUploadList]="false" 
+                      [nzBeforeUpload]="beforeUpload"
+                      [nzCustomRequest]="customRequest"
+                      (nzChange)="handleChange($event)"
+                      [nzDisabled]="avatarUrl()">
+                      @if (!avatarUrl()) { <ng-container>
+                          <div class="flex gap-1">
+                              <i class="upload-icon" nz-icon [nzType]="loading() ? 'loading' : 'plus'"></i>
+                              <div class="ant-upload-text">'Upload'</div>
+                          </div>
+                      </ng-container>
+                      }
+                      @if (avatarUrl()) { <ng-container>
+                          <img [src]="avatarUrl()"
+                              class="relative w-full text-lg  max-w-[140px] max-h-[140px] object-cover"
+                              alt="avatar" />
+                          
+                          <span nz-icon nzType="close"
+                              class="absolute top-[8px] left-[117px] cursor-pointer text-white"
+                              (click)="removeImage()"></span>
+                      </ng-container>
+                      }
+                  </nz-upload>  -->
+              </nz-form-control>
+
+          </nz-form-item>
            
                     </form>
                   
