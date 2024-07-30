@@ -2,8 +2,11 @@ using GridProjectPortals.BLL;
 using GridProjectPortals.DAL;
 using GridProjectPortals.DAL.Interface;
 using GridProjectPortals.Domain.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Configuration;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +23,19 @@ builder.Services.AddCors(o => o.AddPolicy("AppCORSPolicy", builder =>
     .SetPreflightMaxAge(TimeSpan.FromMinutes(10));
 }));
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    };
+});
 // Add services to the container.
 
 builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();
@@ -28,6 +44,8 @@ builder.Services.AddTransient<ISendIMailRepository,SendMailRepository>();
 builder.Services.AddScoped<IMailServices, MailServices>();
 builder.Services.AddScoped<IUserRespository,UserRepository>();
 builder.Services.AddScoped<Cryptography>();
+builder.Services.AddScoped<ITokenRespository, TokenRespository>();
+builder.Services.AddScoped<tokenService>();
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddSwaggerGen(swagger =>

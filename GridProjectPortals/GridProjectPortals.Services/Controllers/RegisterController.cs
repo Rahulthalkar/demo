@@ -1,6 +1,7 @@
 ﻿using GridProjectPortals.BLL;
 using GridProjectPortals.DAL.Interface;
 using GridProjectPortals.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace GridProjectPortals.Services.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class RegisterController : ControllerBase
     {
         private readonly UserService _userService;

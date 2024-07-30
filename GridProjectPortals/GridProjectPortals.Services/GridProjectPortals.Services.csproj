@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.16" />
     <PackageReference Include="MailKit" Version="4.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
     <PackageReference Include="MimeKit" Version="4.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0">
       <TreatAsUsed>true</TreatAsUsed>
